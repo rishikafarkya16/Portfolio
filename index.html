@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Rishika Farkya</title>
+</head>
+<body>
+    <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach((el) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const revealPoint = 150;
+
+      if (elementTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+
+
+<header>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+
+
+<div class="intro reveal" id="home">
+  <div class="intro-text">
+    <h1>Hello,<br>
+    I’m Rishika Farkya<br>
+    Computer Science Student |<br> Tech Enthusiast | Problem Solver</h1>
+  </div>
+  <div class="intro-img reveal" style="transition-delay: 0.5s;">
+    <img src="r.jpg" />
+  </div>
+</div>
+
+
+<div id="about" class="about">
+  <h1 class="reveal">About</h1>
+  <p class="reveal" style="transition-delay: 0.3s;">
+    I’m a curious and driven Computer Science student passionate about building innovative solutions, learning new technologies, and growing continuously.<br>
+        Whether it’s solving problems through code or experimenting with emerging tools, I enjoy turning ideas into real-world applications.<br>
+        I’m always open to collaboration and eager to explore new horizons in the tech world.
+  </p>
+</div>
+
+
+<div id="skills" class="skills">
+  <h1 class="reveal">Skills</h1>
+
+  <div class="reveal" style="transition-delay: 0.3s;">
+        <p>Programming Languages: C, C++, Python, Java, Android
+
+Web Development: HTML, CSS, JavaScript, React
+
+Tools & Technologies: Visual Studio Code, Eclipse, Pycharm, Folium, OpenStreetMap
+
+Databases: MySQL, SQLite
+
+Concepts: Data Structures, Algorithms, Object-Oriented Programming
+
+Soft Skills: Problem-solving, Teamwork, Communication</p>
+    </div>
+  </div>
+
+    <div id="projects" class="projects">
+  <h1 class="reveal">Projects</h1>
+  <ul>
+     <li class="reveal" style="transition-delay: 0.3s;">
+      <strong>Supplier-Customer Delivery Optimization Map</strong><br>
+      <em>Technologies:</em> Python, Folium, OpenRouteService, GeoPandas<br>
+      Developed an interactive map application that helps find the best suppliers based on the shortest distance to customers for efficient delivery planning. Features include supplier search, route optimization, and real-time distance calculation to ensure timely deliveries.
+    </li>
+    <li class="reveal" style="transition-delay: 0.5s;">
+      <strong>Route Planner for Supplier Deliveries</strong><br>
+      <em>Technologies:</em> Python, OpenRouteService, Flask<br>
+      Built a web app that plans optimized routes from multiple suppliers to customer locations, improving delivery efficiency and reducing transportation costs.
+    </li>
+    <li class="reveal" style="transition-delay: 0.7s;">
+    <strong>Smart Text-to-Speech System Using Webcam</strong><br>
+    <em>Technologies:</em> Python, OpenCV, Pyttsx3<br>
+    Developed a real-time text recognition and speech conversion system using a webcam and speaker. The application captures text via the webcam, processes it with OCR, and converts it into audible speech without relying on Bluetooth or Wi-Fi.
+    </li>
+
+    <li class="reveal" style="transition-delay: 0.9s;">
+    <strong>Library Management System</strong><br>
+    <em>Technologies:</em> Java, MySQL, Swing<br>
+    Built a desktop application to manage library operations including book issuance, returns, and inventory tracking with a user-friendly interface for librarian and admin.
+    </li>
+
+    <li class="reveal" style="transition-delay: 0.11s;">
+    <strong>Student Library Portal</strong><br>
+    <em>Technologies:</em> Android, Java <br>
+    Created a separate student interface with login, enabling students to search books, view their issued book history, and manage their accounts effectively.
+    </li>
+  </ul>
+</div>
+
+<div id="contact" class="contact">
+  <h1 class="reveal">Contact</h1>
+
+  <p class="reveal" style="transition-delay: 0.2s;"><i class="fas fa-envelope"></i> Email: rishika.farkya@gmail.com</p>
+  <p class="reveal" style="transition-delay: 0.3s;"><i class="fas fa-phone"></i> Phone: +91 8989221162</p>
+  <p class="reveal" style="transition-delay: 0.4s;"><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/rishika-farkya-5ba591298" target="_blank">linkedin.com/in/rishika-farkya</a></p>
+  <p class="reveal" style="transition-delay: 0.5s;"><i class="fab fa-github"></i> GitHub: <a href="https://github.com/rishikafarkya16" target="_blank">github.com/rishikafarkya16</a></p>
+</div>
+
+  <footer>
+  <p>© 2025 Rishika Farkya. All rights reserved.</p>
+  <p>Made with <span style="color: #e25555;">❤️</span> | Connect with me on
+    <a href="https://www.linkedin.com/in/rishika-farkya-5ba591298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" style="color:#7b1fa2; text-decoration:none;">LinkedIn</a> & 
+    <a href="https://github.com/rishikafarkya16" target="_blank" rel="noopener noreferrer" style="color:#7b1fa2; text-decoration:none;">GitHub</a>
+  </p>
+</footer>
+
+</body>
+</html>
