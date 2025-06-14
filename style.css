@@ -249,57 +249,59 @@ footer a:hover {
 @media (max-width: 768px) {
   header ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px;
   }
 
   header {
-    padding: 20px;
+    padding: 15px 20px;
   }
 
   .intro {
     flex-direction: column;
-    padding: 40px 20px;
-    margin: 30px 10px;
-    gap: 30px;
     text-align: center;
+    padding: 30px 20px;
+    margin: 30px 10px;
   }
 
   .intro-text {
-    font-size: 1.2rem;
-  }
-
-  .intro-text h1 {
-    font-size: 2rem;
-  }
-
-  .intro-img img {
-    width: 250px;
-    height: 250px;
-  }
-
-  .intro-img {
-    transform: translateX(0);
-  }
-
-  .skills p,
-  .about p,
-  .projects ul {
-    padding: 0 10px;
     font-size: 1.1rem;
   }
 
+  .intro-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .intro-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .intro-img {
+    transform: none;
+  }
+
+  .about p,
+  .skills p,
+  .projects ul,
+  .contact p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
   .projects ul {
-    padding-left: 15px;
+    padding-left: 20px;
   }
 
   .contact {
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   footer {
     font-size: 12px;
-    padding: 15px 5px;
+    padding: 10px;
   }
 }
+
 
